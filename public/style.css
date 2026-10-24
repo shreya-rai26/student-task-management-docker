@@ -1,0 +1,81 @@
+:root {
+  --navy: #102a43;
+  --blue: #1976d2;
+  --light: #f4f8fc;
+  --text: #243b53;
+}
+
+body {
+  margin: 0;
+  background: var(--light);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.navbar {
+  background: var(--navy);
+}
+
+.hero {
+  padding: 110px 0 70px;
+  background: linear-gradient(135deg, #102a43, #1f5f8b);
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #8ed1fc;
+}
+
+.eyebrow {
+  color: #5d9dcc;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.hero .eyebrow {
+  color: #bfe3fa;
+}
+
+.panel, .task-card {
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(16, 42, 67, .08);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title > i {
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.task-card {
+  height: 100%;
+}
+
+.task-card.completed {
+  opacity: .7;
+}
+
+.task-card.completed h5 {
+  text-decoration: line-through;
+}
+
+.priority-high { border-left: 5px solid #dc3545; }
+.priority-medium { border-left: 5px solid #ffc107; }
+.priority-low { border-left: 5px solid #198754; }
+
+footer {
+  background: var(--navy);
+  color: #d9e2ec;
+}

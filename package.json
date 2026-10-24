@@ -1,0 +1,13 @@
+{
+  "name": "student-task-management-app",
+  "version": "1.0.0",
+  "description": "Dockerized Node.js and Express task management web application for TPDS-III Module 4 Practical 2.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
